@@ -195,7 +195,10 @@ export default function CompanyDashboard() {
           </Link>
 
           {/* Post Maintenance Job */}
-          <div className="rounded-xl border border-slate-700 bg-slate-900 p-6">
+          <Link
+            href="/company/jobs/new"
+            className="rounded-xl border border-slate-700 bg-slate-900 p-6 transition hover:border-blue-500 hover:bg-slate-800"
+          >
             <div className="text-3xl">🛠️</div>
 
             <h3 className="mt-4 text-xl font-semibold text-white">
@@ -207,46 +210,50 @@ export default function CompanyDashboard() {
               preventive maintenance and installations.
             </p>
 
-            <span className="mt-5 inline-block text-sm text-slate-500">
-              Coming in M6
+            <span className="mt-5 inline-block font-semibold text-blue-400">
+              Create a job →
             </span>
-          </div>
+          </Link>
 
           {/* My Jobs */}
-          <div className="rounded-xl border border-slate-700 bg-slate-900 p-6">
-            <div className="text-3xl">📋</div>
+<Link
+  href="/company/jobs"
+  className="rounded-xl border border-slate-700 bg-slate-900 p-6 transition hover:border-blue-500 hover:bg-slate-800"
+>
+  <div className="text-3xl">📋</div>
 
-            <h3 className="mt-4 text-xl font-semibold text-white">
-              My Jobs
-            </h3>
+  <h3 className="mt-4 text-xl font-semibold text-white">
+    My Jobs
+  </h3>
 
-            <p className="mt-2 text-sm text-slate-400">
-              Review your posted maintenance requirements and assigned
-              technicians.
-            </p>
+  <p className="mt-2 text-sm text-slate-400">
+    Review your posted maintenance requirements and assigned technicians.
+  </p>
 
-            <span className="mt-5 inline-block text-sm text-slate-500">
-              Coming in M6
-            </span>
-          </div>
+  <span className="mt-5 inline-block text-sm font-semibold text-blue-400">
+    Manage your jobs →
+  </span>
+</Link>
 
           {/* Maintenance Reports */}
-          <div className="rounded-xl border border-slate-700 bg-slate-900 p-6">
-            <div className="text-3xl">📊</div>
+<Link
+  href="/company/reports"
+  className="rounded-xl border border-slate-700 bg-slate-900 p-6 transition hover:border-blue-500 hover:bg-slate-800"
+>
+  <div className="text-3xl">📊</div>
 
-            <h3 className="mt-4 text-xl font-semibold text-white">
-              Maintenance Reports
-            </h3>
+  <h3 className="mt-4 text-xl font-semibold text-white">
+    Maintenance Reports
+  </h3>
 
-            <p className="mt-2 text-sm text-slate-400">
-              Review breakdown reports, root causes and corrective
-              actions.
-            </p>
+  <p className="mt-2 text-sm text-slate-400">
+    Review technician-submitted reports, approve completed work and generate service reports.
+  </p>
 
-            <span className="mt-5 inline-block text-sm text-slate-500">
-              Planned
-            </span>
-          </div>
+  <span className="mt-5 inline-block text-sm font-semibold text-blue-400">
+    Review Reports →
+  </span>
+</Link>
 
           {/* Preventive Maintenance */}
           <div className="rounded-xl border border-slate-700 bg-slate-900 p-6">
